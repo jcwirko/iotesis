@@ -1,18 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="822a83fb-aee7-4b3d-abcf-f0dde0186d19" name="Default Changelist" comment="" />
+    <list default="true" id="822a83fb-aee7-4b3d-abcf-f0dde0186d19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Air.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ClassRoom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ClassRoomProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Day.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Institute.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Professor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ProfessorSubject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Subject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_202054_create_classroom_profile_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/DaysTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/animate/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/bootstrap/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.eot?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/gritter/images/gritter-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/gritter/images/gritter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/gritter/images/ie-spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/gritter/jquery.gritter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/gritter/jquery.gritter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/inspinia/inspinia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/inspinia/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery.knob.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery.metisMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/leaflet/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/leaflet/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/pace/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/popper/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/License.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/_tmp/logo-ion-range-slider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/css/ion.rangeSlider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/css/ion.rangeSlider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/history.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/js/ion.rangeSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/js/ion.rangeSlider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/_base.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/_mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/irs.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/big.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/flat.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/modern.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/round.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/sharp.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/square.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/sweetalert2/sweetalert2.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/sweetalert2/sweetalert2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/toastr/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/libs/toastr/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/iot.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/virtualhost.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/virtualhost.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tfc" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -104,14 +197,25 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1RvB6Kd3UBs2W7gifDyaHjlX6c4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/database/seeds" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -142,11 +246,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570537512774</updated>
-      <workItem from="1570537515124" duration="437000" />
+      <workItem from="1570537515124" duration="633000" />
+      <workItem from="1570738481339" duration="8245000" />
+      <workItem from="1571179743203" duration="4522000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
