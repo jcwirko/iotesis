@@ -2,77 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="822a83fb-aee7-4b3d-abcf-f0dde0186d19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Air.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ClassRoom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ClassRoomProfile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Day.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Institute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Professor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ProfessorSubject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Subject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_202054_create_classroom_profile_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/DaysTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/animate/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/bootstrap/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.eot?" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/gritter/images/gritter-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/gritter/images/gritter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/gritter/images/ie-spacer.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/gritter/jquery.gritter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/gritter/jquery.gritter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/inspinia/inspinia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/inspinia/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery.knob.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery.metisMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/jquery/jquery.slimscroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/leaflet/leaflet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/leaflet/leaflet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/pace/pace.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/popper/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/License.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/_tmp/logo-ion-range-slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/css/ion.rangeSlider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/css/ion.rangeSlider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/history.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/js/ion.rangeSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/js/ion.rangeSlider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/_base.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/_mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/irs.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/big.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/flat.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/modern.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/round.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/sharp.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/less/skins/square.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/range-slider/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/sweetalert2/sweetalert2.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/sweetalert2/sweetalert2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/toastr/toastr.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/libs/toastr/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/iot.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SubjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/dachary.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/iot1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/iot2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/iot3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/iot4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backgrounds/iot5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/iot1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/iot2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/iot3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/patterns/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/patterns/header-profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/patterns/iot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/patterns/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_10_202054_create_classroom_profile_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_202054_create_classroom_profile_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/virtualhost.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/virtualhost.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/iot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/iot.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -213,9 +167,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/database/migrations" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/database/seeds" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,7 +202,7 @@
       <updated>1570537512774</updated>
       <workItem from="1570537515124" duration="633000" />
       <workItem from="1570738481339" duration="8245000" />
-      <workItem from="1571179743203" duration="4522000" />
+      <workItem from="1571179743203" duration="8391000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,28 @@
+body.login{
+    /*background-image: url("/backgrounds/iot3.jpg");*/
+    /*height: 100%;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.well {
+    background-color: #fff;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    border: 0;
+    margin: 0px;
+    padding: 20px 10px;
+}
+
+.irs-min{
+    background-color: #27983c !important;
+}
+
+
+.irs-max{
+    background-color: #e06464 !important;
+}

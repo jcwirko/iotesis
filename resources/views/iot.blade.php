@@ -20,7 +20,7 @@
         <link href="{{asset('libs/animate/animate.css')}}" rel="stylesheet">
         <link href="{{asset('libs/sweetalert2/sweetalert2.css')}}" rel="stylesheet">
         <link href="{{asset('libs/inspinia/style.css')}}" rel="stylesheet">
-        <link href="{{asset('css.css')}}" rel="stylesheet">
+        <link href="{{asset('css/styles.css')}}" rel="stylesheet">
 
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
               integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -50,11 +50,8 @@
                                 </a>
                             </li>
                         </ul>
-
                     </nav>
                 </div>
-
-
 
                 <div class="wrapper p-0" id="app">
                     <base-iot></base-iot>
@@ -64,10 +61,6 @@
                 <div class="footer">
                     <div class="float-right">
                         <strong>Internet of Things</strong>
-                        -
-                        <strong>Ahorro energético</strong>
-                        -
-                        <strong>Computación ubicua</strong>
                     </div>
                     <div>
                         <strong>Ingeniería en Informática</strong> Dachary &copy; 2019

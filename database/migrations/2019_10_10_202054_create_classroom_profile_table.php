@@ -22,7 +22,7 @@ class CreateClassroomProfileTable extends Migration
 
             $table->foreign('classroom_id')
                 ->references('id')
-                ->on('classroom_id');
+                ->on('classrooms');
 
         });
     }
