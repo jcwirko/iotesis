@@ -1,10 +1,18 @@
 <?php
 
+use App\Day;
 use App\Subject;
 use Illuminate\Database\Seeder;
 
 class DaysTableSeeder extends Seeder
 {
+    private $actualDate;
+
+    public function __construct()
+    {
+        $this->actualDate = date('Y-m-d');
+    }
+
     /**
      * Run the database seeds.
      *
@@ -12,14 +20,50 @@ class DaysTableSeeder extends Seeder
      */
     public function run()
     {
-        Subject::create([
-            'date' => date('m/d/Y h:i:s a', time())
+        $this->architectureDays();
+        $this->modelDays();
+
+    }
+
+    private function architectureDays()
+    {
+        Day::create([
+            'date' => date('Y-m-d'),
+            'start_time' => '15:00:00',
+            'end_time' => '16:30:00',
+            'attend' => 1,
+            'subject_id' => 1,
+            'professor_id' => 1
         ]);
 
-        Subject::create(['name' => 'Arquitectura de computadoras']);
+        Day::create([
+            'date' => date('Y-m-d', strtotime('+4 day', strtotime($this->actualDate))),
+            'start_time' => '17:15:00',
+            'end_time' => '18:45:00',
+            'attend' => 0,
+            'subject_id' => 1,
+            'professor_id' => 1
+        ]);
+    }
 
-        Subject::create(['name' => 'Bases de datos']);
+    private function modelDays()
+    {
+        Day::create([
+            'date' => date('Y-m-d', strtotime('+3 day', strtotime($this->actualDate))),
+            'start_time' => '16:30:00',
+            'end_time' => '18:00:00',
+            'attend' => 1,
+            'subject_id' => 2,
+            'professor_id' => 1
+        ]);
 
-        Subject::create(['name' => 'Inteligencia Artificial I']);
+        Day::create([
+            'date' => date('Y-m-d', strtotime('+5 day', strtotime($this->actualDate))),
+            'start_time' => '21:00:00',
+            'end_time' => '21:30:00',
+            'attend' => 0,
+            'subject_id' => 2,
+            'professor_id' => 1
+        ]);
     }
 }

@@ -1,11 +1,13 @@
 <?php
 
-Route::get('/iot', 'SubjectController@getView');
+Route::get('/', 'Auth\LoginController@showLoginForm');
+
+Route::get('/iot', 'IoTController@getView');
+
+Route::get('/professor', 'ProfessorController@getProfessor');
 
 //Route::post('/iot/setup', 'SubjectController@setUp')->name('iot.setup');
 
-//Route::resource('subject', 'SubjectController');
+Route::get('subject/getDays', 'SubjectController@getDays');
 
-Route::get('/', function(){
-    return view('login');
-});
+

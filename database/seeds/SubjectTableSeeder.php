@@ -12,9 +12,9 @@ class SubjectTableSeeder extends Seeder
      */
     public function run()
     {
-        Subject::create(['name' => 'Modelo y Simulación']);
-
         Subject::create(['name' => 'Arquitectura de computadoras']);
+
+        Subject::create(['name' => 'Modelo y Simulación']);
 
         Subject::create(['name' => 'Bases de datos']);
 
