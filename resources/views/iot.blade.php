@@ -20,7 +20,7 @@
         <link href="{{asset('libs/sweetalert2/sweetalert2.css')}}" rel="stylesheet">
         <link href="{{asset('libs/inspinia/style.css')}}" rel="stylesheet">
         <link href="{{asset('css/styles.css')}}" rel="stylesheet">
-        <link href="{{asset('css/app.css')}}" rel="stylesheet">
+        <link href="{{asset('css/iot.css')}}" rel="stylesheet">
 
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
               integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="

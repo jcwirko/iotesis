@@ -22,6 +22,7 @@ class CreateDaysTable extends Migration
             $table->unsignedInteger('subject_id');
             $table->unsignedInteger('professor_id');
 
+
             $table->foreign('subject_id')
                 ->references('id')
                 ->on('subjects');

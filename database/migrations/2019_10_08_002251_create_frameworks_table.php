@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAirsTable extends Migration
+class CreateFrameworksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateAirsTable extends Migration
      */
     public function up()
     {
-        Schema::create('airs', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('number');
-            $table->integer('temp');
+        Schema::create('frameworks', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateAirsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('airs');
+        Schema::dropIfExists('frameworks');
     }
 }

@@ -2676,19 +2676,10 @@ __webpack_require__.r(__webpack_exports__);
     selectProfile: function selectProfile(subjectId) {
       var _this = this;
 
-      fetch("subject/".concat(subjectId), {
-        method: 'GET',
-        body: JSON.stringify(self.subject),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }).then(function (res) {
-        return res.json();
-      })["catch"](function (error) {
+      $('#timeline').modal('hide');
+      axios.get("subject/".concat(subjectId))["catch"](function (error) {
         console.log('Error: ' + error);
       }).then(function (response) {
-        $('#timeline').modal('hide');
-
         _this.$emit('subject', response);
       });
     },
@@ -2754,7 +2745,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.ibox-content[data-v-7199e12c] {\n    border: none;\n    padding: 0;\n}\n", ""]);
+exports.push([module.i, "\n.ibox-content[data-v-7199e12c] {\n    border: none;\n    padding: 0;\n}\n.swal-popup[data-v-7199e12c] {\n    height: 320px;\n}\n", ""]);
 
 // exports
 
@@ -24077,12 +24068,11 @@ var render = function() {
                                   "div",
                                   { staticClass: "vertical-timeline-content" },
                                   [
-                                    _c("h3", [
-                                      _vm._v(
-                                        "\n                                            " +
-                                          _vm._s(item.subject.name) +
-                                          "\n                                            "
-                                      ),
+                                    _c("h3", { staticClass: "title-subject" }, [
+                                      _c("span", [
+                                        _vm._v("  " + _vm._s(item.subject.name))
+                                      ]),
+                                      _vm._v(" "),
                                       _c(
                                         "a",
                                         {
@@ -24092,7 +24082,9 @@ var render = function() {
                                           attrs: { href: "#" },
                                           on: {
                                             click: function($event) {
-                                              return _vm.selectProfile(1)
+                                              return _vm.selectProfile(
+                                                item.subject.id
+                                              )
                                             }
                                           }
                                         },
@@ -24143,12 +24135,11 @@ var render = function() {
                                   "div",
                                   { staticClass: "vertical-timeline-content" },
                                   [
-                                    _c("h3", [
-                                      _vm._v(
-                                        "\n                                            " +
-                                          _vm._s(item.subject.name) +
-                                          "\n                                            "
-                                      ),
+                                    _c("h3", { staticClass: "title-subject" }, [
+                                      _c("span", [
+                                        _vm._v(_vm._s(item.subject.name))
+                                      ]),
+                                      _vm._v(" "),
                                       _c(
                                         "a",
                                         {
@@ -24157,7 +24148,9 @@ var render = function() {
                                           attrs: { href: "#" },
                                           on: {
                                             click: function($event) {
-                                              return _vm.selectProfile(2)
+                                              return _vm.selectProfile(
+                                                item.subject.id
+                                              )
                                             }
                                           }
                                         },

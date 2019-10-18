@@ -15,9 +15,9 @@ class ProfessorSubjectTableSeeder extends Seeder
     {
         $professor = Professor::find(1); //ELON MUSK
 
-        $simulacion = Subject::find(1);
-        $arquitectura = Subject::find(2);
+        $architecture = Subject::find(1);
+        $model = Subject::find(2);
 
-        $professor->subjects()->attach([$simulacion->id, $arquitectura->id]);
+        $professor->subjects()->attach([$architecture->id, $model->id]);
     }
 }

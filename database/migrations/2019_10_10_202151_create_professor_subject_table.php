@@ -17,6 +17,7 @@ class CreateProfessorSubjectTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('professor_id');
             $table->unsignedInteger('subject_id');
+            $table->unsignedInteger('framework_id')->nullable();
 
             $table->foreign('professor_id')
                 ->references('id')
@@ -26,6 +27,10 @@ class CreateProfessorSubjectTable extends Migration
                 ->references('id')
                 ->on('subjects');
 
+            $table->foreign('framework_id')
+                ->references('id')
+                ->on('frameworks');
+            
             $table->timestamps();
         });
     }

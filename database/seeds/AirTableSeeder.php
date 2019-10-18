@@ -14,14 +14,12 @@ class AirTableSeeder extends Seeder
     {
         Air::create([
             'number' => 1,
-            'min_temp' => 16,
-            'max_temp' => 28
+            'temp' => 22,
         ]);
 
         Air::create([
             'number' => 2,
-            'min_temp' => 18,
-            'max_temp' => 30
+            'temp' => 25,
         ]);
     }
 }

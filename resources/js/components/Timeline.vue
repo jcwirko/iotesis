@@ -19,10 +19,10 @@
                                         <i class="fa fa-laptop" aria-hidden="true"></i>
                                     </div>
                                     <div class="vertical-timeline-content">
-                                        <h3>
-                                            {{item.subject.name}}
+                                        <h3 class="title-subject">
+                                            <span>  {{item.subject.name}}</span>
                                             <a href="#" class="btn btn-sm btn-primary pull-right"
-                                               style="float: right;" @click="selectProfile(1)"> Ver
+                                               style="float: right;" @click="selectProfile(item.subject.id)"> Ver
                                                 perfil</a>
                                         </h3>
                                         <span class="vertical-date">
@@ -40,10 +40,10 @@
                                     </div>
 
                                     <div class="vertical-timeline-content">
-                                        <h3>
-                                            {{item.subject.name}}
+                                        <h3 class="title-subject">
+                                            <span>{{item.subject.name}}</span>
                                             <a href="#" class="btn btn-sm btn-success pull-right"
-                                               @click="selectProfile(2)"> Ver perfil </a>
+                                               @click="selectProfile(item.subject.id)"> Ver perfil </a>
                                         </h3>
 
                                         <span class="vertical-date">
@@ -76,20 +76,14 @@
         },
         methods: {
             selectProfile: function (subjectId) {
-                fetch(
-                    `subject/${subjectId}`, {
-                        method: 'GET',
-                        body: JSON.stringify(self.subject),
-                        headers: {
-                            'Content-Type': 'application/json',
-                        }
-                    }).then(res => res.json())
+
+                $('#timeline').modal('hide');
+
+               axios.get(`subject/${subjectId}`)
                     .catch(error => {
                         console.log('Error: ' + error)
                     })
                     .then(response => {
-                        $('#timeline').modal('hide');
-
                         this.$emit('subject', response)
                     });
             },
@@ -108,5 +102,9 @@
     .ibox-content {
         border: none;
         padding: 0;
+    }
+
+    .swal-popup {
+        height: 320px;
     }
 </style>

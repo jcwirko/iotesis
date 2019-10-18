@@ -12,11 +12,11 @@ class ClassRoom extends Model
 
     public function airs()
     {
-        return $this->belongsToMany(Air::class, 'classroom_air');
+        return $this->morphedByMany(Air::class, 'classroomeable');
     }
 
     public function lights()
     {
-        return $this->belongsToMany(Light::class, 'classroom_light');
+        return $this->morphedByMany(Light::class, 'classroomeable');
     }
 }

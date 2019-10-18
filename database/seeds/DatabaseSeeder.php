@@ -19,10 +19,8 @@ class DatabaseSeeder extends Seeder
         $this->call(LightTableSeeder::class);
         $this->call(ClassRoomTableSeeder::class);
         $this->call(DaysTableSeeder::class);
-     /*   $this->call(ProfessorSubjectTableSeeder::class);
-        $this->call(ClassRoomAirTableSeeder::class);
-        $this->call(ClassRoomLightTableSeeder::class);*/
+        $this->call(ProfessorSubjectTableSeeder::class);
+        $this->call(ClassRoomProfileTableSeeder::class);
 
-        // $this->call(DaysTableSeeder::class);
     }
 }

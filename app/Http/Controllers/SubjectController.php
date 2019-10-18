@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Day;
-use App\Professor;
-use App\Subject;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Http\Request;
-use Illuminate\View\View;
+use Illuminate\Http\JsonResponse;
 
 class SubjectController extends Controller
 {
+    /**
+     * @return JsonResponse
+     */
     public function getDays()
     {
         $days = Day::with('subject')
@@ -19,5 +18,14 @@ class SubjectController extends Controller
             ->get();
 
         return response()->json($days);
+    }
+
+    /**
+     * @param $subjectId
+     * @return JsonResponse
+     */
+    public function getProfile($subjectId)
+    {
+        return response()->json($subjectId);
     }
 }

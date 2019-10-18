@@ -96,8 +96,6 @@
                 } else {
                     this.selectedFramework();
                 }
-
-
             },
             submitForm() {
 
