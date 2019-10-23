@@ -6,17 +6,13 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateProfessorSubjectTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('professor_subject', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('professor_id');
             $table->unsignedInteger('subject_id');
+            $table->unsignedInteger('framework_id')->nullable();
 
             $table->foreign('professor_id')
                 ->references('id')
@@ -26,17 +22,11 @@ class CreateProfessorSubjectTable extends Migration
                 ->references('id')
                 ->on('subjects');
 
+            $table->foreign('framework_id')
+                ->references('id')
+                ->on('frameworks');
+
             $table->timestamps();
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('professor_subject');
     }
 }

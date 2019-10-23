@@ -1,0 +1,18 @@
+.swal2-popup {
+  height: 320px;
+}
+
+.swal2-title {
+  top: 20px;
+}
+
+.swal2-actions {
+  margin-top: 218px !important;
+}
+
+.title-subject {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

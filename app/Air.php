@@ -8,11 +8,10 @@ class Air extends Model
 {
     protected $table = 'airs';
 
-    protected $fillable = ['number', 'min_temp', 'max_temp'];
+    protected $fillable = ['number', 'temp'];
 
     public function classrooms()
     {
         return $this->morphToMany(ClassRoom::class, 'classroomeable');
     }
-
 }

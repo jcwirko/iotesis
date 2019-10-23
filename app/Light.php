@@ -14,6 +14,4 @@ class Light extends Model
     {
         return $this->morphToMany(ClassRoom::class, 'classroomeable');
     }
-
-
 }

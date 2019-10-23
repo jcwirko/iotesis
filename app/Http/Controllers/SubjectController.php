@@ -2,46 +2,36 @@
 
 namespace App\Http\Controllers;
 
+use App\ClassRoom;
+use App\Day;
 use App\Subject;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Http\Request;
-use Illuminate\View\View;
+use Illuminate\Http\JsonResponse;
 
 class SubjectController extends Controller
 {
+    /**
+     * @return JsonResponse
+     */
+    public function getDays()
+    {
+        $days = Day::with('subject')
+            ->with('professor')
+            ->orderBy('date', 'ASC')
+            ->get();
+
+        return response()->json($days);
+    }
 
     /**
-     * @return Factory|View
+     * @param $subjectId
+     * @return JsonResponse
      */
-    public function getView()
+    public function getProfile($subjectId)
     {
-        $architecture = Subject::where('name', 'like', '%Arquitectura%')->first();
-        $model = Subject::where('name', 'like', '%Modelo%')->first();
-        return view('iot', compact('architecture', 'model'));
-    }
+        $subject = Subject::where('id', $subjectId)->with('day')->with(['professorSubject' => function ($q) {
+            return $q->with('classroomProfiles.classroomeable');
+        }])->first();
 
-    private function setValues($values)
-    {
-        for ($i = 1; $i <= 9; $i++) {
-            if (isset($values["led{$i}"])) {
-                $values["led{$i}"] = 1;
-            } else {
-                $values["led{$i}"] = 0;
-            }
-        }
-
-        return $values;
-    }
-
-    public function setUp(Request $request)
-    {
-        $subject = Subject::find($request->input('id'));
-
-        $subject->update($request->all());
-    }
-
-    public function show($id)
-    {
-        return response()->json(Subject::find($id));
+        return response()->json($subject);
     }
 }

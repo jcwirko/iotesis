@@ -6,34 +6,26 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateClassroomProfileTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::create('classroomeable', function (Blueprint $table) {
+        Schema::create('classroomeables', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('classroom_id');
+            $table->integer('class_room_id');
             $table->integer('classroomeable_id');
             $table->string('classroomeable_type');
+            $table->boolean('state');
+            $table->unsignedInteger('professor_subject_id');
             $table->timestamps();
 
-            $table->foreign('classroom_id')
+            $table->foreign('class_room_id')
                 ->references('id')
                 ->on('classrooms');
 
-        });
-    }
+            $table->foreign('professor_subject_id')
+                ->references('id')
+                ->on('professor_subject');
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('classroomeable');
+
+        });
     }
 }

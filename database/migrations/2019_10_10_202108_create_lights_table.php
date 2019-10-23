@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateLightsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('lights', function (Blueprint $table) {
@@ -18,15 +13,5 @@ class CreateLightsTable extends Migration
             $table->integer('number')->unique();
             $table->timestamps();
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('lights');
     }
 }

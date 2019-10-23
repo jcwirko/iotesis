@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ClassRoomProfile extends Model
 {
-    protected $table = 'classroom_profile';
+    protected $table = 'classroomeables';
 
     protected $fillable = [
         'class_room_air_id',
@@ -14,6 +14,12 @@ class ClassRoomProfile extends Model
         'professor_subject_id',
         'state'
     ];
+
+    public function classroomeable()
+    {
+        return $this->morphTo();
+    }
+
 
     public function airs()
     {

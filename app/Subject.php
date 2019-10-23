@@ -10,4 +10,13 @@ class Subject extends Model
 
     protected $fillable = ['name'];
 
+    public function professorSubject()
+    {
+        return $this->hasOne(ProfessorSubject::class);
+    }
+
+    public function day()
+    {
+        return $this->hasOne(Day::class);
+    }
 }

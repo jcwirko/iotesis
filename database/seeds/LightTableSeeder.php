@@ -7,12 +7,6 @@ class LightTableSeeder extends Seeder
 {
     protected $totalLights = 9;
 
-
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         foreach (range(1, $this->totalLights) as $number) {
